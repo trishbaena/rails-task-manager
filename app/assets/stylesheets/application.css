@@ -13,3 +13,33 @@
  *= require_tree .
  *= require_self
  */
+dl, ol, ul {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding-left: inherit;
+}
+
+body a {
+  text-decoration: none;
+}
+
+#container * {
+  padding: 8px;
+}
+
+.btn.btn-primary {
+  margin-top: 4px;
+}
+
+.form-check {
+  display: inline;
+}
+
+.task-links {
+  margin-left: auto;
+}
+
+blockquote {
+  background-color: rgb(233, 233, 233);
+  padding-left: 16px;
+}

@@ -1,0 +1,25 @@
+<div class="row justify-content-center mt-4">
+    <div class="col-lg-4 bg-white rounded shadow-sm p-5">
+      <h1 class="mb-3">Task Manager</h1>
+      <div id="container">
+
+        <ul>
+          <% @tasks.each do |task| %>
+          <li class="shadow-sm rounded px-4 py-3 mb-3 border d-flex">
+            <%= check_box_tag 'completed', nil, checked= task.completed, disabled: true %>
+              <%= link_to task.title, task_path(task) %>
+              <div class="task-links">
+                <%= link_to "Edit", taskedit_path(task) %>
+                <%= link_to "Delete",
+                task_path(task),
+                data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
+                %>
+            </div>
+          </li>
+          <% end %>
+        </ul>
+
+        <%= link_to "Add a new task", new_path %>
+      </div>
+    </div>
+  </div>

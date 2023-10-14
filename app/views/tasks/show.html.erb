@@ -1,0 +1,11 @@
+<div class="row justify-content-center mt-4">
+    <div class="col-lg-4 bg-white rounded shadow-sm p-5">
+      <h1 class="mb-3">Task Manager</h1>
+      <div id="container">
+        <h3><%= @task.title %></h3>
+        <blockquote><%= @task.details %></blockquote>
+        <p><%= @status %></p>
+        <%= link_to "Back to list", tasks_path%>
+      </div>
+    </div>
+  </div>

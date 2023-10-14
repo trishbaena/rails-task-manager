@@ -5,7 +5,7 @@
         <h3><%= @task.title %></h3>
         <blockquote><%= @task.details %></blockquote>
         <p><%= @status %></p>
-        <%= link_to "Back to list", tasks_path%>
+        <%= link_to "Back to list", tasks_path, :class => "btn btn-light" %>
       </div>
     </div>
   </div>

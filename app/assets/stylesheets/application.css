@@ -27,10 +27,6 @@ body a {
   padding: 8px;
 }
 
-.btn.btn-primary {
-  margin-top: 4px;
-}
-
 .form-check {
   display: inline;
 }
@@ -42,4 +38,21 @@ body a {
 blockquote {
   background-color: rgb(233, 233, 233);
   padding-left: 16px;
+}
+.task-title {
+  line-height: 38px;
+}
+#container#task-completed {
+  padding-left: 0px
+}
+#container label {
+  padding-left: 0px;
+  margin-top: 8px;
+}
+#container .update-btn {
+  padding-left: 0px;
+}
+#container .create-btn {
+  padding-top: 16px;
+  padding-left: 0px;
 }
